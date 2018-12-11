@@ -1,37 +1,26 @@
 import java.util.*;
 class ArmstrongRange
 {
-public static void main(String args[])
-{
-   
+   public static void main(String[] args)           //main function
+   {  
+       int i;
        int count = 0;
-       
-       int a=0;
-       for(int i=100;i<=999;i++)
-       {
-          int number=i;
-          while(number!=0)              
-          {
-         
-          number = number / 10;
-          count = count + 1;
-          }
-       
+       int sum=0;
+       for( i=100;i<1000;i++)                       //iterate the loop from 100 to 999
+       {     
+        int number = i;
        while(number>0)
          {
-           int b  = number%10;
-	  a = a + (int) Math.pow(b , count);
+           int remainder  = number%10;
            number = number/ 10;
+           sum= sum + (remainder*remainder*remainder);     
          }
-          if(a==i)
-         {
-           System.out.println(i+" ");
+          if(sum==i)
+          {
+           System.out.print(i+" ");                  //displaying the range from 100 to 999 armstrong numbers
  
-         }
-         a=0;
+          }
+         sum = 0;
       }
-}
-    
-   
-
+  }
 }
