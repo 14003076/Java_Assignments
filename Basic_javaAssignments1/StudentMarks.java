@@ -19,7 +19,7 @@ import java.util.Scanner;
 
        int subject3=scan.nextInt();
    
-   if(subject1 > 60 && subject2 > 60 && subject3 > 60)
+   if(subject1 > 60 && subject2 > 60 && subject3 > 60)              //subject marks greater than 60
    
    {
 
@@ -27,7 +27,7 @@ import java.util.Scanner;
 
    }
  
-   else if((subject1>60 || subject2>60 && subject3>60) && (subject2>60 || subject3>60 && subject1>60)&&(subject3>60 || subject1>60 && subject2>60))
+   else if((subject1>60 || subject2>60 && subject3>60) && (subject2>60 || subject3>60 && subject1>60)&&(subject3>60 || subject1>60 && subject2>60))       //any two subjects greater than 60 and one subject greater than 60
 
    {
 

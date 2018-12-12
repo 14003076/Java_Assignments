@@ -12,7 +12,7 @@ import java.util.*;
 
 	System.out.println("Enter your Amount");
 
-	int amount=scan.nextInt();
+	int amount=scan.nextInt();                        //storing value of amount
 
 	if(amount>0 && amount<180000)
 
